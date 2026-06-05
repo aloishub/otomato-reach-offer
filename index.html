@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Otomato Reach &middot; Your banner campaign</title>
+<meta property="og:title" content="Otomato Reach — your banner campaign">
+<meta property="og:description" content="Reach active DeFi users inside the Otomato app. Portfolio-aware targeting, low-noise placement, full reporting.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -27,11 +29,12 @@
     color: #f4f3f1;
     border-radius: 16px;
     border: 1px solid #1b1b1b;
-    padding: 40px 44px 44px;
+    padding: 38px 44px 40px;
     background-image: radial-gradient(900px 380px at 12% -8%, rgba(229,83,26,0.16), transparent 60%);
   }
   .oto-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #E5531A; }
   .oto-h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin-top: 10px; color: #fff; }
+  .oto-sub { font-size: 14.5px; color: #9b9a96; margin-top: 12px; line-height: 1.55; max-width: 640px; }
   .oto-mono { font-variant-numeric: tabular-nums; }
   .oto-white { color: #fff; }
 
@@ -54,7 +57,7 @@
     display: inline-flex; align-items: center; justify-content: center; gap: 8px;
     background: #E5531A; color: #fff; border: none; border-radius: 10px;
     padding: 12px 20px; font-size: 14px; font-weight: 700; cursor: pointer;
-    font-family: inherit; transition: background 0.15s, transform 0.1s;
+    font-family: inherit; transition: background 0.15s, transform 0.1s; text-decoration: none;
   }
   .oto-btn:hover { background: #F06A2E; }
   .oto-btn:active { transform: translateY(1px); }
@@ -73,7 +76,13 @@
   .cohort-name { font-size: 14px; font-weight: 700; color: #fff; }
 
   .oto-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-  @media (max-width: 760px) { .oto-grid-2 { grid-template-columns: 1fr; } .oto { padding: 28px 22px 32px; } .oto-h1 { font-size: 24px; } }
+
+  .oto-foot { margin-top: 28px; padding-top: 22px; border-top: 1px solid #1a1a1a; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
+  .oto-foot-text { font-size: 13px; color: #9b9a96; line-height: 1.5; }
+  .oto-foot-text b { color: #fff; font-weight: 700; }
+  .oto-note { font-size: 11.5px; color: #6f6e6a; margin-top: 16px; text-align: center; }
+
+  @media (max-width: 760px) { .oto-grid-2 { grid-template-columns: 1fr; } .oto { padding: 28px 22px 30px; } .oto-h1 { font-size: 24px; } .oto-foot { flex-direction: column; align-items: flex-start; } }
 </style>
 </head>
 <body>
@@ -81,10 +90,11 @@
     <div style="text-align:center;">
       <div class="oto-eyebrow">Otomato Reach &middot; Campaign</div>
       <div class="oto-h1">Your banner campaign on Otomato</div>
+      <div class="oto-sub" style="margin-left:auto; margin-right:auto;">Reach active DeFi users where they already pay attention: inside the Otomato app. Portfolio-aware targeting, low-noise placement, full reporting on every campaign.</div>
     </div>
 
     <!-- SHARED DURATION ON TOP -->
-    <div style="font-size:11px; font-weight:700; color:#ffffff; text-transform:uppercase; letter-spacing:0.1em; text-align:center; margin:24px 0 20px;">Campaign duration</div>
+    <div style="font-size:11px; font-weight:700; color:#ffffff; text-transform:uppercase; letter-spacing:0.1em; text-align:center; margin:26px 0 20px;">Campaign duration</div>
     <div data-durgroup style="display:flex; gap:8px; justify-content:center; align-items:stretch; max-width:680px; margin:0 auto;">
       <div class="duropt" data-dur="1" onclick="otoDur(this)" style="flex:1; justify-content:center;"><span class="dur-label">1 week</span></div>
       <div class="duropt on" data-dur="1.5" onclick="otoDur(this)" style="flex:1; justify-content:center;"><span class="dur-label">2 weeks</span></div>
@@ -125,14 +135,19 @@
           <li><span class="oto-white">Lowest Cost Per User</span></li>
           <li>Full reporting (impressions, clicks)</li>
         </ul>
-        <button class="oto-btn" style="margin-top:28px; width:100%;">Reach the whole feed</button>
+        <a class="oto-btn" style="margin-top:28px; width:100%;" href="mailto:alois@otomato.xyz?subject=Otomato%20Reach%20campaign">Reach the whole feed</a>
       </div>
     </div>
+
+    <div class="oto-foot">
+      <div class="oto-foot-text"><b>Ready to launch, or want a custom cohort?</b><br>We size the exact audience before you commit. Frequency-capped to protect signal quality.</div>
+      <a class="oto-btn" href="mailto:alois@otomato.xyz?subject=Otomato%20Reach%20campaign">Book a campaign</a>
+    </div>
+    <div class="oto-note">Otomato Reach &middot; portfolio-aware, low-noise advertising for active DeFi users.</div>
   </div>
 
 <script>
   function otoDur(btn) {
-    var body = document.body;
     var grp = btn.closest('[data-durgroup]');
     grp.querySelectorAll('[data-dur]').forEach(function (d) { d.classList.remove('on'); });
     btn.classList.add('on');
