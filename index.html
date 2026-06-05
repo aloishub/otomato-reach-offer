@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Otomato Reach &middot; Your banner campaign</title>
-<meta property="og:title" content="Otomato Reach — your banner campaign">
-<meta property="og:description" content="Reach active DeFi users inside the Otomato app. Portfolio-aware targeting, low-noise placement, full reporting.">
+<title>Otomato Reach &middot; Sponsored placement</title>
+<meta property="og:title" content="Otomato Reach — sponsored placement">
+<meta property="og:description" content="How a sponsored placement appears to active DeFi users inside the Otomato app.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -20,158 +20,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 28px 18px;
+    padding: 36px 18px;
+    background-image: radial-gradient(900px 420px at 50% -10%, rgba(229,83,26,0.16), transparent 62%);
   }
-  .oto {
+  .wrap { width: 100%; max-width: 460px; text-align: center; }
+  .eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #E5531A; }
+  h1 { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; margin-top: 12px; color: #fff; }
+  .sub { font-size: 14px; color: #9b9a96; margin-top: 12px; line-height: 1.55; }
+  .shot {
     width: 100%;
-    max-width: 1040px;
-    background: #050505;
-    color: #f4f3f1;
-    border-radius: 16px;
-    border: 1px solid #1b1b1b;
-    padding: 38px 44px 40px;
-    background-image: radial-gradient(900px 380px at 12% -8%, rgba(229,83,26,0.16), transparent 60%);
+    max-width: 340px;
+    height: auto;
+    margin: 28px auto 0;
+    display: block;
+    border-radius: 26px;
+    border: 1px solid #1d1d1d;
+    box-shadow: 0 30px 70px -30px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.02);
   }
-  .oto-eyebrow { font-size: 11px; font-weight: 800; letter-spacing: 0.18em; text-transform: uppercase; color: #E5531A; }
-  .oto-h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.12; margin-top: 10px; color: #fff; }
-  .oto-sub { font-size: 14.5px; color: #9b9a96; margin-top: 12px; line-height: 1.55; max-width: 640px; }
-  .oto-mono { font-variant-numeric: tabular-nums; }
-  .oto-white { color: #fff; }
-
-  .oto-card { background: #0c0c0c; border: 1px solid #1d1d1d; border-radius: 14px; padding: 24px; }
-  .oto-card.feature { border-color: #E5531A; box-shadow: 0 0 0 1px rgba(229,83,26,0.3), 0 18px 50px -28px rgba(229,83,26,0.55); }
-
-  .oto-price { font-size: 40px; font-weight: 800; color: #fff; letter-spacing: -0.02em; line-height: 1; }
-  .oto-price small { font-size: 14px; font-weight: 600; color: #807f7b; letter-spacing: 0; }
-
-  .oto-list { list-style: none; margin: 16px 0 0; padding: 0; display: flex; flex-direction: column; gap: 11px; }
-  .oto-list li { font-size: 13.5px; color: #c9c8c4; display: flex; gap: 10px; line-height: 1.45; }
-  .oto-list li::before { content: ""; width: 16px; height: 16px; flex-shrink: 0; margin-top: 2px; border-radius: 5px; background: rgba(229,83,26,0.15); background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E5531A' stroke-width='3.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E"); background-size: 11px; background-repeat: no-repeat; background-position: center; }
-
-  .oto-tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; }
-  .oto-tag.pop { background: #E5531A; color: #fff; }
-  .oto-tag.soft { background: #161616; color: #9b9a96; border: 1px solid #242424; }
-  .tribbon { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); white-space: nowrap; }
-
-  .oto-btn {
-    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center;
     background: #E5531A; color: #fff; border: none; border-radius: 10px;
-    padding: 12px 20px; font-size: 14px; font-weight: 700; cursor: pointer;
-    font-family: inherit; transition: background 0.15s, transform 0.1s; text-decoration: none;
+    padding: 13px 26px; font-size: 14px; font-weight: 700; cursor: pointer;
+    font-family: inherit; transition: background 0.15s; text-decoration: none;
+    margin-top: 30px;
   }
-  .oto-btn:hover { background: #F06A2E; }
-  .oto-btn:active { transform: translateY(1px); }
-
-  .duropt { display: flex; align-items: center; gap: 10px; padding: 11px 13px; border: 1px solid #1d1d1d; border-radius: 10px; cursor: pointer; transition: all 0.15s; }
-  .duropt:hover { border-color: #333; }
-  .duropt.on { border-color: #E5531A; background: rgba(229,83,26,0.07); }
-  .dur-label { font-size: 13px; color: #c9c8c4; }
-  .duropt.on .dur-label { color: #fff; font-weight: 600; }
-
-  .cohort { border: 1px solid #1d1d1d; border-radius: 10px; padding: 12px 14px; cursor: pointer; transition: all 0.15s; }
-  .cohort + .cohort { margin-top: 10px; }
-  .cohort:hover { border-color: #333; }
-  .cohort.on { border-color: #E5531A; background: rgba(229,83,26,0.07); }
-  .cohort-eyebrow { font-size: 10px; font-weight: 800; letter-spacing: 0.12em; text-transform: uppercase; color: #E5531A; }
-  .cohort-name { font-size: 14px; font-weight: 700; color: #fff; }
-
-  .oto-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-
-  .oto-foot { margin-top: 28px; padding-top: 22px; border-top: 1px solid #1a1a1a; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
-  .oto-foot-text { font-size: 13px; color: #9b9a96; line-height: 1.5; }
-  .oto-foot-text b { color: #fff; font-weight: 700; }
-  .oto-note { font-size: 11.5px; color: #6f6e6a; margin-top: 16px; text-align: center; }
-
-  @media (max-width: 760px) { .oto-grid-2 { grid-template-columns: 1fr; } .oto { padding: 28px 22px 30px; } .oto-h1 { font-size: 24px; } .oto-foot { flex-direction: column; align-items: flex-start; } }
+  .btn:hover { background: #F06A2E; }
+  .note { font-size: 11.5px; color: #6f6e6a; margin-top: 18px; }
 </style>
 </head>
 <body>
-  <div class="oto">
-    <div style="text-align:center;">
-      <div class="oto-eyebrow">Otomato Reach &middot; Campaign</div>
-      <div class="oto-h1">Your banner campaign on Otomato</div>
-      <div class="oto-sub" style="margin-left:auto; margin-right:auto;">Reach active DeFi users where they already pay attention: inside the Otomato app. Portfolio-aware targeting, low-noise placement, full reporting on every campaign.</div>
-    </div>
-
-    <!-- SHARED DURATION ON TOP -->
-    <div style="font-size:11px; font-weight:700; color:#ffffff; text-transform:uppercase; letter-spacing:0.1em; text-align:center; margin:26px 0 20px;">Campaign duration</div>
-    <div data-durgroup style="display:flex; gap:8px; justify-content:center; align-items:stretch; max-width:680px; margin:0 auto;">
-      <div class="duropt" data-dur="1" onclick="otoDur(this)" style="flex:1; justify-content:center;"><span class="dur-label">1 week</span></div>
-      <div class="duropt on" data-dur="1.5" onclick="otoDur(this)" style="flex:1; justify-content:center;"><span class="dur-label">2 weeks</span></div>
-      <div class="duropt" data-dur="2" onclick="otoDur(this)" style="flex:1; justify-content:center; position:relative; overflow:visible;"><div class="tribbon"><span class="oto-tag pop">Best value</span></div><span class="dur-label">1 month</span></div>
-    </div>
-
-    <div class="oto-grid-2" style="margin-top:24px; align-items:stretch;">
-      <!-- LEFT: targeted cohort -->
-      <div class="tcol oto-card" data-base="800" style="display:flex; flex-direction:column;">
-        <div style="height:34px; display:flex; align-items:center;"><span class="oto-tag pop">Targeted cohort</span></div>
-        <div style="display:flex; align-items:flex-end; gap:6px; margin-top:14px;">
-          <span class="oto-price oto-mono" data-colprice>$1,200</span><span class="oto-price"><small>/ campaign</small></span>
-        </div>
-        <div style="font-size:11px; font-weight:700; color:#807f7b; text-transform:uppercase; letter-spacing:0.1em; margin:18px 0 10px;">Pick a cohort</div>
-        <div data-cohortgroup>
-          <div class="cohort on" data-cohortbase="800" onclick="otoCohort(this)">
-            <div style="display:flex; justify-content:space-between; align-items:baseline;"><div class="cohort-eyebrow">Cohort A</div><div class="cohort-eyebrow" style="color:#807f7b; width:78px; text-align:left;">800 users</div></div>
-            <div class="cohort-name" style="margin-top:4px;">Power users &amp; LPs</div>
-          </div>
-          <div class="cohort" data-cohortbase="1200" onclick="otoCohort(this)">
-            <div style="display:flex; justify-content:space-between; align-items:baseline;"><div class="cohort-eyebrow">Cohort B</div><div class="cohort-eyebrow" style="color:#807f7b; width:78px; text-align:left;">2,500 users</div></div>
-            <div class="cohort-name" style="margin-top:4px;">Multi-chain EVM + Bridge &amp; DEX</div>
-          </div>
-        </div>
-      </div>
-
-      <!-- RIGHT: GLOBAL COHORT -->
-      <div class="tcol oto-card feature" data-base="1500" style="display:flex; flex-direction:column; position:relative; background:linear-gradient(180deg, rgba(229,83,26,0.12), #0c0c0c 60%);">
-        <div class="tribbon"><span class="oto-tag pop">&#128081; Most popular</span></div>
-        <div style="height:34px; display:flex; align-items:center; gap:8px;"><span class="oto-tag pop">Global Cohort</span></div>
-        <div style="display:flex; align-items:flex-end; gap:6px; margin-top:14px;">
-          <span class="oto-price oto-mono" data-colprice>$2,250</span><span class="oto-price"><small>/ campaign</small></span>
-        </div>
-        <div style="font-size:13px; color:#e7e6e2; margin-top:10px; line-height:1.55; font-weight:600;">Every Otomato user. Maximum reach.</div>
-        <div style="margin-top:13px;"><span class="oto-tag pop">&#9733; 1 pop-up offered &middot; worth $499</span></div>
-        <ul class="oto-list" style="margin-bottom:6px;">
-          <li>All 4,000 users</li>
-          <li><span class="oto-white">Lowest Cost Per User</span></li>
-          <li>Full reporting (impressions, clicks)</li>
-        </ul>
-        <a class="oto-btn" style="margin-top:28px; width:100%;" target="_blank" rel="noopener" href="mailto:dylan@otomato.xyz?subject=Otomato%20Reach%20campaign">Reach the whole feed</a>
-      </div>
-    </div>
-
-    <div class="oto-foot">
-      <div class="oto-foot-text"><b>Ready to launch, or want a custom cohort?</b><br>We size the exact audience before you commit. Frequency-capped to protect signal quality.</div>
-      <a class="oto-btn" target="_blank" rel="noopener" href="mailto:dylan@otomato.xyz?subject=Otomato%20Reach%20campaign">Book a campaign</a>
-    </div>
-    <div class="oto-note">Otomato Reach &middot; portfolio-aware, low-noise advertising for active DeFi users.</div>
+  <div class="wrap">
+    <div class="eyebrow">Otomato Reach</div>
+    <h1>Your sponsored placement, live in the feed</h1>
+    <p class="sub">Here is exactly how BOT Chain appears to active DeFi users, right inside the Otomato app.</p>
+    <img class="shot" src="placement.png" alt="BOT Chain sponsored placement in the Otomato portfolio feed">
+    <a class="btn" target="_blank" rel="noopener" href="mailto:dylan@otomato.xyz?subject=Otomato%20Reach%20campaign">Book a campaign</a>
+    <div class="note">Otomato Reach &middot; portfolio-aware, low-noise advertising for active DeFi users.</div>
   </div>
-
-<script>
-  function otoDur(btn) {
-    var grp = btn.closest('[data-durgroup]');
-    grp.querySelectorAll('[data-dur]').forEach(function (d) { d.classList.remove('on'); });
-    btn.classList.add('on');
-    otoCalc();
-  }
-  function otoCohort(btn) {
-    var grp = btn.closest('[data-cohortgroup]');
-    grp.querySelectorAll('.cohort').forEach(function (c) { c.classList.remove('on'); });
-    btn.classList.add('on');
-    otoCalc();
-  }
-  function otoCalc() {
-    var durSel = document.querySelector('[data-durgroup] [data-dur].on');
-    var mult = durSel ? parseFloat(durSel.dataset.dur) : 1;
-    document.querySelectorAll('.tcol').forEach(function (col) {
-      var base;
-      var cg = col.querySelector('[data-cohortgroup]');
-      if (cg) { var c = cg.querySelector('.cohort.on'); base = c ? parseFloat(c.dataset.cohortbase) : parseFloat(col.dataset.base); }
-      else base = parseFloat(col.dataset.base);
-      var out = col.querySelector('[data-colprice]');
-      if (out) out.textContent = '$' + Math.round(base * mult).toLocaleString('en-US');
-    });
-  }
-  otoCalc();
-</script>
 </body>
 </html>
