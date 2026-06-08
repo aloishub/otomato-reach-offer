@@ -58,6 +58,7 @@
   .tag { display: inline-block; font-size: 10px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; }
   .tag.pop { background: var(--orange); color: #fff; }
   .tag.soft { background: #f0f1f4; color: var(--muted); border: 1px solid var(--line); }
+  .tag.subtle { background: rgba(229,83,26,0.10); color: var(--orange); border: none; }
 
   .cohort { border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; cursor: pointer; transition: all 0.15s; background: #fcfcfd; }
   .cohort + .cohort { margin-top: 9px; }
@@ -103,7 +104,7 @@
         <div class="durrow" data-durgroup>
           <div class="duropt" data-dur="1" onclick="otoDur(this)"><span class="dur-label">1 week</span></div>
           <div class="duropt on" data-dur="1.5" onclick="otoDur(this)"><span class="dur-label">2 weeks</span></div>
-          <div class="duropt" data-dur="2" onclick="otoDur(this)"><div class="tribbon"><span class="tag pop">Best value</span></div><span class="dur-label">1 month</span></div>
+          <div class="duropt" data-dur="2" onclick="otoDur(this)"><div class="tribbon"><span class="tag subtle">Best value</span></div><span class="dur-label">1 month</span></div>
         </div>
 
         <div class="cards">
@@ -126,9 +127,9 @@
           <!-- Global cohort -->
           <div class="tcol card feature" data-base="1500">
             <div class="tribbon"><span class="tag pop">&#128081; Most popular</span></div>
-            <span class="tag pop" style="align-self:flex-start;">Global Cohort</span>
+            <span class="tag subtle" style="align-self:flex-start;">Global Cohort</span>
             <div style="display:flex; align-items:flex-end; gap:5px; margin-top:12px;"><span class="price" data-colprice>$2,250</span><span class="price"><small>/ campaign</small></span></div>
-            <div style="margin-top:11px;"><span class="tag pop">&#9733; 1 pop-up offered &middot; worth $499</span></div>
+            <div style="margin-top:11px;"><span class="tag subtle">&#9733; 1 pop-up offered &middot; worth $499</span></div>
             <ul class="feat-list">
               <li>All 4,000 users</li>
               <li>Lowest Cost Per User</li>
